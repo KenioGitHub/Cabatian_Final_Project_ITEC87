@@ -21,11 +21,6 @@ body {
   background-color: #fff; 
 }
 
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
 .name {
   color: #fff;
   animation: fadeIn 2s ease-in-out;
