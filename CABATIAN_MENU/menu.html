@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#home">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#maindish">Main Dish</a></li>
+                <li class="nav-item"><a class="nav-link" href="#vegetables">Vegetables</a></li>
+                <li class="nav-item"><a class="nav-link" href="#desserts">Desserts</a></li>
+                <li class="nav-item"><a class="nav-link" href="#drinks">Drinks</a></li>
+                <li class="nav-item"><a class="nav-link" href="#addons">Add-ons</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="home" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="pic/icon.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-6 tagline">
+                    <h1><span>Italia </span>Mania</h1>
+                    <p>Homestyle Italian cooking – best enjoyed with family. Buon appetito!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <div class="myMenu">
+        <section class="maindish" id="maindish">
+            <h1 class="title">Main Dish</h1>
+    
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="pic/main_dish/chicken_scarpariello.webp" alt="">
+                    </div>
+                    <div class="content" id="mainDish1">
+                        <p><input type="checkbox" class="CB" id="Red" name="Chicken Scarpariello - Php 695.00" data-price="695">Chicken Scarpariello</p>
+                        <p><span>Php 695.00</span></p>
+                        <p>Quantity:
+                            <button class="quantity-btn" onclick="updateQuantity('mainDish1', 1)">+</button>
+                            <span id="quantity-mainDish1">0</span>
+                            <button class="quantity-btn" onclick="updateQuantity('mainDish1', -1)">-</button>
+                        </p>
+                    </div>
+                </div>                
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="pic/main_dish/pasta_ncasciata_sicilian_baked_pasta.webp" alt="">
+                    </div>
+                    <div class="content" id="mainDish2">
+                        <p><input type="checkbox" class="CB" id="Red" name="Pasta Ncasciata Sicilian Baked Pasta - Php 470.00" data-price="470">Pasta Ncasciata Sicilian Baked Pasta</p>
+                        <p><span>Php 470.00</span></p>
+                        <p>Quantity:
+                            <button class="quantity-btn" onclick="updateQuantity('mainDish2', 1)">+</button>
+                            <span id="quantity-mainDish2">0</span>
+                            <button class="quantity-btn" onclick="updateQuantity('mainDish2', -1)">-</button>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="pic/main_dish/sardinian_stuffed_eggplant.webp" alt="">
+                    </div>
+                    <div class="content" id="mainDish3">
+                        <p><input type="checkbox" class="CB" id="Red" name="Sardinian Stuffed Eggplant - Php 455.00" data-price="455">Sardinian Stuffed Eggplant</p>
+                        <p><span>Php 455.00</span></p>
+                        <p>Quantity:
+                            <button class="quantity-btn" onclick="updateQuantity('mainDish3', 1)">+</button>
+                            <span id="quantity-mainDish3">0</span>
+                            <button class="quantity-btn" onclick="updateQuantity('mainDish3', -1)">-</button>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="pic/main_dish/spaghetti_with_anchovy.webp" alt="">
+                    </div>
+                    <div class="content" id="mainDish4">
+                        <p><input type="checkbox" class="CB" id="Red" name="Spaghetti with Anchovy - Php 295.00" data-price="295">Spaghetti with Anchovy</p>
+                        <p><span>Php 295.00</span></p>
+                        <p>Quantity:
+                            <button class="quantity-btn" onclick="updateQuantity('mainDish4', 1)">+</button>
+                            <span id="quantity-mainDish4">0</span>
+                            <button class="quantity-btn" onclick="updateQuantity('mainDish4', -1)">-</button>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="pic/main_dish/sun_dried_tomato_and_arugula_pizza.webp" alt="">
+                    </div>
+                    <div class="content" id="mainDish5">
+                        <p><input type="checkbox" class="CB" id="Red" name="Sun Dried Tomato and Arugula Pizza - Php 699.00" data-price="699">Sun Dried Tomato and Arugula Pizza</p>
+                        <p><span>Php 699.00</span></p>
+                        <p>Quantity:
+                            <button class="quantity-btn" onclick="updateQuantity('mainDish5', 1)">+</button>
+                            <span id="quantity-mainDish5">0</span>
+                            <button class="quantity-btn" onclick="updateQuantity('mainDish5', -1)">-</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="vegetables" id="vegetables">
+            <h1 class="title">Vegetables</h1>
+    
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="pic/vegetables/Carrot-Salad-with-Fresh Cilantro.jpg" alt="">
+                    </div>
+                    <div class="content" id="vegetable1">
+                        <p><input type="checkbox" class="CB" id="Red" name="Carrot Salad with Fresh Cilantro - Php 395.00" data-price="395">Carrot Salad with Fresh Cilantro</p>
+                        <p><span>Php 395.00</span></p>
+                        <p>Quantity:
+                            <button class="quantity-btn" onclick="updateQuantity('vegetable1', 1)">+</button>
+                            <span id="quantity-vegetable1">0</span>
+                            <button class="quantity-btn" onclick="updateQuantity('vegetable1', -1)">-</button>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="pic/vegetables/Marinated-Squash-with-Roasted-Vegetables.jpg" alt="">
+                    </div>
+                    <div class="content" id="vegetable2">
+                        <p><input type="checkbox" class="CB" id="Red" name="Marinated Squash with Roasted Vegetables - Php 550.00" data-price="550">Marinated Squash with Roasted Vegetables</p>
+                        <p><span>Php 550.00</span></p>
+                        <p>Quantity:
+                            <button class="quantity-btn" onclick="updateQuantity('vegetable2', 1)">+</button>
+                            <span id="quantity-vegetable2">0</span>
+                            <button class="quantity-btn" onclick="updateQuantity('vegetable2', -1)">-</button>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="pic/vegetables/Pumpkin-Minestrone.jpg" alt="">
+                    </div>
+                    <div class="content" id="vegetable3">
+                        <p><input type="checkbox" class="CB" id="Red" name="Pumpkin Minestrone - Php 195.00" data-price="195">Pumpkin Minestrone</p>
+                        <p><span>Php 195.00</span></p>
+                        <p>Quantity:
+                            <button class="quantity-btn" onclick="updateQuantity('vegetable3', 1)">+</button>
+                            <span id="quantity-vegetable3">0</span>
+                            <button class="quantity-btn" onclick="updateQuantity('vegetable3', -1)">-</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="desserts" id="desserts">
+            <h1 class="title">Desserts</h1>
+    
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="pic/desserts/Chocolate-and-Pistachio-Biscotti.webp" alt="">
+                    </div>
+                    <div class="content" id="dessert1">
+                        <p><input type="checkbox" class="CB" id="Red" name="Chocolate and Pistachio Biscotti - Php 300.00" data-price="300">Chocolate and Pistachio Biscotti</p>
+                        <p><span>Php 300.00</span></p>
+                        <p>Quantity:
+                            <button class="quantity-btn" onclick="updateQuantity('dessert1', 1)">+</button>
+                            <span id="quantity-dessert1">0</span>
+                            <button class="quantity-btn" onclick="updateQuantity('dessert1', -1)">-</button>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="pic/desserts/concord_grape_granita.webp" alt="">
+                    </div>
+                    <div class="content" id="dessert2">
+                        <p><input type="checkbox" class="CB" id="Red" name="Concord Grape Granita - Php 215.00" data-price="215">Concord Grape Granita</p>
+                        <p><span>Php 215.00</span></p>
+                        <p>Quantity:
+                            <button class="quantity-btn" onclick="updateQuantity('dessert2', 1)">+</button>
+                            <span id="quantity-dessert2">0</span>
+                            <button class="quantity-btn" onclick="updateQuantity('dessert2', -1)">-</button>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="pic/desserts/Pumpkin-Gingersnap Tiramisù.webp" alt="">
+                    </div>
+                    <div class="content" id="dessert3">
+                        <p><input type="checkbox" class="CB" id="Red" name="Pumpkin Gingersnap Tiramisù - Php 390.00" data-price="390">Pumpkin Gingersnap Tiramisù</p>
+                        <p><span>Php 390.00</span></p>
+                        <p>Quantity:
+                            <button class="quantity-btn" onclick="updateQuantity('dessert3', 1)">+</button>
+                            <span id="quantity-dessert3">0</span>
+                            <button class="quantity-btn" onclick="updateQuantity('dessert3', -1)">-</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="drinks" id="drinks">
+            <h1 class="title">Drinks</h1>
+    
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="pic/drinks/BELLINI.jpg" alt="">
+                    </div>
+                    <div class="content" id="drink1">
+                        <p><input type="checkbox" class="CB" id="Red" name="Bellini - Php 210.00" data-price="210">Bellini</p>
+                        <p><span>Php 210.00</span></p>
+                        <p>Quantity:
+                            <button class="quantity-btn" onclick="updateQuantity('drink1', 1)">+</button>
+                            <span id="quantity-drink1">0</span>
+                            <button class="quantity-btn" onclick="updateQuantity('drink1', -1)">-</button>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="pic/drinks/classic-italian-drinks-Bombardino.jpg" alt="">
+                    </div>
+                    <div class="content" id="drink2">
+                        <p><input type="checkbox" class="CB" id="Red" name="Bombardino - Php 250.00" data-price="250">Bombardino</p>
+                        <p><span>Php 250.00</span></p>
+                        <p>Quantity:
+                            <button class="quantity-btn" onclick="updateQuantity('drink2', 1)">+</button>
+                            <span id="quantity-drink2">0</span>
+                            <button class="quantity-btn" onclick="updateQuantity('drink2', -1)">-</button>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="pic/drinks/Hugo-Spritz.jpg" alt="">
+                    </div>
+                    <div class="content" id="drink3">
+                        <p><input type="checkbox" class="CB" id="Red" name="Hugo Spritz - Php 190.00" data-price="190">Hugo Spritz</p>
+                        <p><span>Php 190.00</span></p>
+                        <p>Quantity:
+                            <button class="quantity-btn" onclick="updateQuantity('drink3', 1)">+</button>
+                            <span id="quantity-drink3">0</span>
+                            <button class="quantity-btn" onclick="updateQuantity('drink3', -1)">-</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="addons" id="addons">
+            <h1 class="title">Add-ons</h1>
+    
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="pic/add-ons/agustarellopuntarelle.jpg" alt="">
+                    </div>
+                    <div class="content" id="addon1">
+                        <p><input type="checkbox" class="CB" id="Red" name="Puntarelle - Php 120.00" data-price="120">Puntarelle</p>
+                        <p><span>Php 120.00</span></p>
+                        <p>Quantity:
+                            <button class="quantity-btn" onclick="updateQuantity('addon1', 1)">+</button>
+                            <span id="quantity-addon1">0</span>
+                            <button class="quantity-btn" onclick="updateQuantity('addon1', -1)">-</button>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="pic/add-ons/cianfotta.jpeg" alt="">
+                    </div>
+                    <div class="content" id="addon2">
+                        <p><input type="checkbox" class="CB" id="Red" name="Cianfotta - Php 150.00" data-price="150">Cianfotta</p>
+                        <p><span>Php 150.00</span></p>
+                        <p>Quantity:
+                            <button class="quantity-btn" onclick="updateQuantity('addon2', 1)">+</button>
+                            <span id="quantity-addon2">0</span>
+                            <button class="quantity-btn" onclick="updateQuantity('addon2', -1)">-</button>
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="pic/add-ons/Fagioli-all-uccelletto.jpeg" alt="">
+                    </div>
+                    <div class="content" id="addon3">
+                        <p><input type="checkbox" class="CB" id="Red" name="Fagioli all’uccelletto - Php 109.00" data-price="109">Fagioli all’uccelletto</p>
+                        <p><span>Php 109.00</span></p>
+                        <p>Quantity:
+                            <button class="quantity-btn" onclick="updateQuantity('addon3', 1)">+</button>
+                            <span id="quantity-addon3">0</span>
+                            <button class="quantity-btn" onclick="updateQuantity('addon3', -1)">-</button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <button class="btn" id="showTotalBtn"><br>Check Out:<img src="pic/shopping-cart.png"/>
+            <p id="totalPriceDisplay">Total Price: <span id="totalPrice">Php 0</span></p>
+        </button>
+
+    </div>
+    
+    <div id="receiptModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Receipt</h2>
+            <div id="receiptItems"></div>
+            <p>Total Price: <span id="modalTotalPrice">Php 0</span></p>
+            <div class="discountType">
+                <label><b>Discount Type:</b><br></label>
+                <br><label><input type="radio" id="Red" name="discount" value="0.2"> Senior <span>(20%)</span></label><br>
+                <label><input type="radio" id="Red" name="discount" value="0.3"> PWD <span>(30%)</span></label><br>
+                <label><input type="radio" id="Red" name="discount" value="0.1"> Student <span>(10%)</span></label>
+            </div>
+            <div class="placeOrder">
+                <button class="btnPlaceOrder" id="placeOrderBtn">Place Order</button>
+                <p>Discounted Price: <span id="discountedPrice">Php 0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <section class="footer">
+        <div class="credit">
+            © 2024 Italia Mania | All Rights Reserved.
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>

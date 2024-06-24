@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sari-sari Store</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="store.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="logo-container">
+                <a class="navbar-brand" href="#home"><img src="images/logo.png" alt=""></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#pants">Pants</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#shirt">Shirts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#perfume">Perfumes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sando">Sando</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#toys">Toys</a></li>
+                    <li class="nav-item"><a class="nav-link" href="itemStocks.html">Stocks</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    
+    
+
+    <section class="home" id="home">
+        <div class="tagline">
+            <img src="images/home.png" alt="">
+            <h1><span>Shop </span>with us!</h1>
+        </div>
+    </section>
+
+    <div class="items">
+        <section class="pants" id="pants" style="padding-bottom: 150px;">
+            <h1 class="title">Pants</h1>
+    
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="images/pants/baggypants.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item" id="jeans1">
+                            <p id="pants1CB" style="font-size: 30px;">Baggy Pants</p>
+                            <p><span>Php 695.00</span></p>
+                            <p>Quantity:
+                            <button button class="quantity-btn" onclick="updateStock('jeans1', -1)">+</button>
+                            <span id="quantity-jeans1">0</span>
+                            <button button class="quantity-btn" onclick="updateStock('jeans1', 1)">-</button>
+                            </p>
+                            <p>Stock: <span id="stock-jeans1">12</span></p>
+                            <p style="text-align: center; margin-bottom: 5px;">
+                                <input type="checkbox" id="Green" value="695.00" name="Baggy Pants - Php 695.00" data-price="695"> Add to Cart
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/pants/trousers.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item" id="jeans2">
+                            <p id="pants2CB" style="font-size: 30px;">Trousers</p>
+                            <p><span>Php 450.00</span></p>
+                            <p>Quantity:
+                            <button button class="quantity-btn" onclick="updateStock('jeans2', -1)">+</button>
+                            <span id="quantity-jeans2">0</span>
+                            <button button class="quantity-btn" onclick="updateStock('jeans2', 1)">-</button>
+                            </p>
+                            <p>Stock: <span id="stock-jeans2">15</span></p>
+                            <p style="text-align: center; margin-bottom: 5px;">
+                                <input type="checkbox" id="Green" value="450.00" name="Trousers - Php 450.00" data-price="450"> Add to Cart
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/pants/flare.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item" id="jeans3">
+                            <p id="pants3CB" style="font-size: 30px;">Flare Pants</p>
+                            <p><span>Php 700.00</span></p>
+                            <p>Quantity:
+                            <button button class="quantity-btn" onclick="updateStock('jeans3', -1)">+</button>
+                            <span id="quantity-jeans3">0</span>
+                            <button button class="quantity-btn" onclick="updateStock('jeans3', 1)">-</button>
+                            </p>
+                            <p>Stock: <span id="stock-jeans3">6</span></p>
+                            <p style="text-align: center; margin-bottom: 5px;">
+                                <input type="checkbox" id="Green" value="700.00" name="Flare Pants - Php 700.00" data-price="700"> Add to Cart
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/pants/trackpants.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item" id="jeans4">
+                            <p id="pants4CB" style="font-size: 30px;">Track Pants</p>
+                            <p><span>Php 540.00</span></p>
+                            <p>Quantity:
+                            <button button class="quantity-btn" onclick="updateStock('jeans4', -1)">+</button>
+                            <span id="quantity-jeans4">0</span>
+                            <button button class="quantity-btn" onclick="updateStock('jeans4', 1)">-</button>
+                            </p>
+                            <p>Stock: <span id="stock-jeans4">10</span></p>
+                            <p style="text-align: center; margin-bottom: 5px;">
+                                <input type="checkbox" id="Green" value="540.00" name="Track Pants - Php 540.00" data-price="540"> Add to Cart
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="shirt" id="shirt">
+            <h1 class="title">T-Shirt</h1>
+    
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="images/shirt/poloshirt.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item" id="shirt1">
+                            <p id="shirt1CB" style="font-size: 30px;">Polo Shirt</p>
+                            <p><span>Php 405.00</span></p>
+                            <p>Quantity:
+                            <button button class="quantity-btn" onclick="updateStock('shirt1', -1)">+</button>
+                            <span id="quantity-shirt1">0</span>
+                            <button button class="quantity-btn" onclick="updateStock('shirt1', 1)">-</button>
+                            </p>
+                            <p>Stock: <span id="stock-shirt1">10</span></p>
+                            <p style="text-align: center; margin-bottom: 5px;">
+                                <input type="checkbox" id="Green" value="405.00" name="Polo Shirt - Php 405.00" data-price="405"> Add to Cart
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/shirt/compression.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item" id="shirt2">
+                            <p id="shirt2CB" style="font-size: 30px;">Compression Shirt</p>
+                            <p><span>Php 200.00</span></p>
+                            <p>Quantity:
+                            <button button class="quantity-btn" onclick="updateStock('shirt2', -1)">+</button>
+                            <span id="quantity-shirt2">0</span>
+                            <button button class="quantity-btn" onclick="updateStock('shirt2', 1)">-</button>
+                            </p>
+                            <p>Stock: <span id="stock-shirt2">4</span></p>
+                            <p style="text-align: center; margin-bottom: 5px;">
+                                <input type="checkbox" id="Green" value="200.00" name="Compression Shirt - Php 200.00" data-price="200"> Add to Cart
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/shirt/thesmiths.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item" id="shirt3">
+                            <p id="shirt3CB" style="font-size: 30px;">The Smiths Shirt</p>
+                            <p><span>Php 250.00</span></p>
+                            <p>Quantity:
+                            <button button class="quantity-btn" onclick="updateStock('shirt3', -1)">+</button>
+                            <span id="quantity-shirt3">0</span>
+                            <button button class="quantity-btn" onclick="updateStock('shirt3', 1)">-</button>
+                            </p>
+                            <p>Stock: <span id="stock-shirt3">21</span></p>
+                            <p style="text-align: center; margin-bottom: 5px;">
+                                <input type="checkbox" id="Green" value="250.00" name="The Smiths Shirt - Php 250.00" data-price="250"> Add to Cart
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/shirt/vintage.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item" id="shirt4">
+                            <p id="shirt4CB" style="font-size: 30px;">Vintage Polo</p>
+                            <p><span>Php 500.00</span></p>
+                            <p>Quantity:
+                            <button button class="quantity-btn" onclick="updateStock('shirt4', -1)">+</button>
+                            <span id="quantity-shirt4">0</span>
+                            <button button class="quantity-btn" onclick="updateStock('shirt4', 1)">-</button>
+                            </p>
+                            <p>Stock: <span id="stock-shirt4">8</span></p>
+                            <p style="text-align: center; margin-bottom: 5px;">
+                                <input type="checkbox" id="Green" value="500.00" name="Vinatage Polo - Php 500.00" data-price="500"> Add to Cart
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="perfume" id="perfume">
+            <h1 class="title">Perfume</h1>
+    
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="images/perfume/armani.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item" id="perfume1">
+                            <p id="perfume1" style="font-size: 30px;">Armani</p>
+                            <p><span>Php 600.00</span></p>
+                            <p>Quantity:
+                            <button button class="quantity-btn" onclick="updateStock('perfume1', -1)">+</button>
+                            <span id="quantity-perfume1">0</span>
+                            <button button class="quantity-btn" onclick="updateStock('perfume1', 1)">-</button>
+                            </p>
+                            <p>Stock: <span id="stock-perfume1">3</span></p>
+                            <p style="text-align: center; margin-bottom: 5px;">
+                                <input type="checkbox" id="Green" value="600.00" name="Armani - Php 600.00" data-price="600"> Add to Cart
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/perfume/chanel.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item" id="perfume2">
+                            <p id="perfume2CB" style="font-size: 30px;">Chanel</p>
+                            <p><span>Php 520.00</span></p>
+                            <p>Quantity:
+                            <button button class="quantity-btn" onclick="updateStock('perfume2', -1)">+</button>
+                            <span id="quantity-perfume2">0</span>
+                            <button button class="quantity-btn" onclick="updateStock('perfume2', 1)">-</button>
+                            </p>
+                            <p>Stock: <span id="stock-perfume2">11</span></p>
+                            <p style="text-align: center; margin-bottom: 5px;">
+                                <input type="checkbox" id="Green" value="520.00" name="Chanel - Php 520.00" data-price="520"> Add to Cart
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/perfume/sauvage.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item" id="perfume3">
+                            <p id="perfume3CB" style="font-size: 30px;">Sauvage</p>
+                            <p><span>Php 850.00</span></p>
+                            <p>Quantity:
+                            <button button class="quantity-btn" onclick="updateStock('perfume3', -1)">+</button>
+                            <span id="quantity-perfume3">0</span>
+                            <button button class="quantity-btn" onclick="updateStock('perfume3', 1)">-</button>
+                            </p>
+                            <p>Stock: <span id="stock-perfume3">9</span></p>
+                            <p style="text-align: center; margin-bottom: 5px;">
+                                <input type="checkbox" id="Green" value="850.00" name="Sauvage - Php 850.00" data-price="850"> Add to Cart
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/perfume/versace.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item" id="perfume4">
+                            <p id="perfume4CB" style="font-size: 30px;">Versace</p>
+                            <p><span>Php 750.00</span></p>
+                            <p>Quantity:
+                            <button button class="quantity-btn" onclick="updateStock('perfume4', -1)">+</button>
+                            <span id="quantity-perfume4">0</span>
+                            <button button class="quantity-btn" onclick="updateStock('perfume4', 1)">-</button>
+                            </p>
+                            <p>Stock: <span id="stock-perfume4">5</span></p>
+                            <p style="text-align: center; margin-bottom: 5px;">
+                                <input type="checkbox" id="Green" value="750.00" name="Versace - Php 750.00" data-price="750"> Add to Cart
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sando" id="sando">
+            <h1 class="title">Sando</h1>
+    
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="images/sando/flameHeart.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item" id="sando1">
+                            <p id="sando1CB" style="font-size: 30px;">Flame Heart</p>
+                            <p><span>Php 380.00</span></p>
+                            <p>Quantity:
+                            <button button class="quantity-btn" onclick="updateStock('sando1', -1)">+</button>
+                            <span id="quantity-sando1">0</span>
+                            <button button class="quantity-btn" onclick="updateStock('sando1', 1)">-</button>
+                            </p>
+                            <p>Stock: <span id="stock-sando1">4</span></p>
+                            <p style="text-align: center; margin-bottom: 5px;">
+                                <input type="checkbox" id="Green" value="380.00" name="Flame Heart - Php 380.00" data-price="380"> Add to Cart
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="images/sando/grayTankTop.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item" id="sando2">
+                            <p id="sando2CB" style="font-size: 30px;">Gray Tank Top</p>
+                            <p><span>Php 150.00</span></p>
+                            <p>Quantity:
+                                <button button class="quantity-btn" onclick="updateStock('sando2', -1)">+</button>
+                                <span id="quantity-sando2">0</span>
+                                <button button class="quantity-btn" onclick="updateStock('sando2', 1)">-</button>
+                                </p>
+                                <p>Stock: <span id="stock-sando2">8</span></p>
+                                <p style="text-align: center; margin-bottom: 5px;">
+                                    <input type="checkbox" id="Green" value="150.00" name="Gray Tank Top - Php 150.00" data-price="150"> Add to Cart
+                                </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/sando/sportSando.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item" id="sando3">
+                            <p id="sando3CB" style="font-size: 30px;">Sports Sando</p>
+                            <p><span>Php 230.00</span></p>
+                            <p>Quantity:
+                            <button button class="quantity-btn" onclick="updateStock('sando3', -1)">+</button>
+                            <span id="quantity-sando3">0</span>
+                            <button button class="quantity-btn" onclick="updateStock('sando3', 1)">-</button>
+                            </p>
+                            <p>Stock: <span id="stock-sando3">10</span></p>
+                            <p style="text-align: center; margin-bottom: 5px;">
+                                <input type="checkbox" id="Green" value="230.00" name="Sports Sando - Php 230.00" data-price="230"> Add to Cart
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/sando/whiteTankTop.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item" id="sando4">
+                            <p id="sando4CB" style="font-size: 30px;">White Tank Top</p>
+                            <p><span>Php 150.00</span></p>
+                            <p>Quantity:
+                            <button button class="quantity-btn" onclick="updateStock('sando4', -1)">+</button>
+                            <span id="quantity-sando4">0</span>
+                            <button button class="quantity-btn" onclick="updateStock('sando4', 1)">-</button>
+                            </p>
+                            <p>Stock: <span id="stock-sando4">10</span></p>
+                            <p style="text-align: center; margin-bottom: 5px;">
+                                <input type="checkbox" id="Green" value="150.00" name="White Tank Top - Php 150.00" data-price="150"> Add to Cart
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="toys" id="toys">
+            <h1 class="title">Toys</h1>
+    
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="images/toys/joker.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item" id="toys1">
+                            <p id="toys1CB" style="font-size: 30px;">Joker</p>
+                            <p><span>Php 400.00</span></p>
+                            <p>Quantity:
+                            <button button class="quantity-btn" onclick="updateStock('toys1', -1)">+</button>
+                            <span id="quantity-toys1">0</span>
+                            <button button class="quantity-btn" onclick="updateStock('toys1', 1)">-</button>
+                            </p>
+                            <p>Stock: <span id="stock-toys1">17</span></p>
+                            <p style="text-align: center; margin-bottom: 5px;">
+                                <input type="checkbox" id="Green" value="400.00" name="Joker - Php 400.00" data-price="400"> Add to Cart
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/toys/lightsaber.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item" id="toys2">
+                            <p id="toys2CB" style="font-size: 30px;">Light Saber</p>
+                            <p><span>Php 600.00</span></p>
+                            <p>Quantity:
+                            <button button class="quantity-btn" onclick="updateStock('toys2', -1)">+</button>
+                            <span id="quantity-toys2">0</span>
+                            <button button class="quantity-btn" onclick="updateStock('toys2', 1)">-</button>
+                            </p>
+                            <p>Stock: <span id="stock-toys2">4</span></p>
+                            <p style="text-align: center; margin-bottom: 5px;">
+                                <input type="checkbox" id="Green" value="600.00" name="Light Saber - Php 600.00" data-price="600"> Add to Cart
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/toys/pokeball.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item" id="toys3">
+                            <p id="toys3CB" style="font-size: 30px;">Pokéball</p>
+                            <p><span>Php 900.00</span></p>
+                            <p>Quantity:
+                            <button button class="quantity-btn" onclick="updateStock('toys3', -1)">+</button>
+                            <span id="quantity-toys3">0</span>
+                            <button button class="quantity-btn" onclick="updateStock('toys3', 1)">-</button>
+                            </p>
+                            <p>Stock: <span id="stock-toys3">12</span></p>
+                            <p style="text-align: center; margin-bottom: 5px;">
+                                <input type="checkbox" id="Green" value="900.00" name="Pokéball - Php 900.00" data-price="900"> Add to Cart
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/toys/rubiks.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item" id="toys4">
+                            <p id="toys4CB" style="font-size: 30px;">Rubiks</p>
+                            <p><span>Php 300.00</span></p>
+                            <p>Quantity:
+                            <button button class="quantity-btn" onclick="updateStock('toys4', -1)">+</button>
+                            <span id="quantity-toys4">0</span>
+                            <button button class="quantity-btn" onclick="updateStock('toys4', 1)">-</button>
+                            </p>
+                            <p>Stock: <span id="stock-toys4">10</span></p>
+                            <p style="text-align: center; margin-bottom: 5px;">
+                                <input type="checkbox" id="Green" value="300.00" name="Rubiks - Php 300.00" data-price="300"> Add to Cart
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <button class="btn" id="showTotalBtn"><br>Check Out:
+            <p id="totalPriceDisplay">Total Price: <span id="totalPrice">Php 0</span></p>
+        </button>
+    
+    </div>
+
+    <div id="receiptModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Receipt</h1>
+            <div id="receiptItems"></div>
+            <p>Total Price: <span id="modalTotalPrice">Php 0</span></p>
+            <div class="discountType">
+                <label><b>Discount Type:</b><br></label>
+                <br><label><input type="radio" id="Green" name="discount" value="0.2"> Senior <span>(20%)</span></label><br>
+                <label><input type="radio" id="Green" name="discount" value="0.3"> PWD <span>(30%)</span></label><br>
+                <label><input type="radio" id="Green" name="discount" value="0.1"> Student <span>(10%)</span></label>
+            </div>
+            <div class="placeOrder">
+                <button class="btnPlaceOrder" id="placeOrderBtn">Place Order</button>
+                <p>Discounted Price: <span id="discountedPrice">Php 0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <section class="footer">
+
+        <div class="credit">
+            © 2024 Spree Clothing | All Rights Reserved.
+        </div>
+
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="store.js"></script>
+
+</body>
+</html>

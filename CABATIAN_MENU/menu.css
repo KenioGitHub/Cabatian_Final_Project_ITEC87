@@ -1,0 +1,350 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+body{
+    background-image: url(pic/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+html{
+    scroll-padding-top: 100px;
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    background-color: #242124;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    padding:30px 100px;
+    z-index: 10;
+}
+
+.navbar a{
+    font-size: 16px;
+    margin:0 1rem;
+    color:#fff;
+}
+
+.navbar a:hover{
+    color: crimson;
+    letter-spacing: 1px;
+}
+
+p{
+    font-family: Georgia, serif;
+    font-size: 20px;
+    color: #8f1115;
+}
+
+.home {
+    padding: 200px 0;
+}
+
+.home h1 {
+    font-size: 100px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: Georgia, serif;
+}
+
+.home p {
+    font-size: 23px;
+    padding-top: 10px;
+    color: #fff;
+}
+
+.tagline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-shadow: 2px 2px #15151588;
+    font-family: Georgia, serif;
+}
+
+@media (max-width: 767px) {
+    .home h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .home p {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .tagline {
+        align-items: center;
+    }
+
+    .home img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+span{
+    font-family: Georgia, serif;
+    color: #8f1115;
+}
+
+section {
+    margin-bottom: 200px;
+}
+
+.title{
+    font-family: Georgia, serif;
+    font-size: 50px;
+    color:#fff;
+	padding-top: 20px;
+    padding-bottom: 15px;
+    text-shadow: 2px 2px #15151588;
+    text-align: center;
+}
+
+.myMenu span{
+    font-family: 'Poppins', sans-serif;
+    color: #8f1115;
+    align-items: center;
+}
+
+.myMenu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1rem;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .myMenu .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        gap: 1rem;
+        padding: 10px;
+    }
+}
+
+.myMenu .box-container .box{
+    background-color: rgba(245, 245, 245, 0.822);
+    box-shadow: 5px 11px 10px 10px #15151588;
+    border-radius: 5px;
+}
+
+.myMenu .box-container .box .image{
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.myMenu .box-container .box .image img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.myMenu .box-container .box:hover .image img{
+    transform: scale(1.2);
+}
+
+.myMenu .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+
+.content p{
+    font-family: Georgia, serif;
+    font-size: 20px;
+    color: #8f1115;
+}
+
+.quantity-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: transparent;
+    border: 1px solid #8f1115;
+    color: #8f1115;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.quantity-btn:hover {
+    background-color: #8f1115;
+    color: #fff;
+    border-color: #8f1115;
+}
+
+.btn{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 12px;
+    background-color: #8f1115;
+    color: white;
+    box-shadow: 5px 11px 10px 10px #15151588;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Georgia, serif;
+    margin: 20px;
+    animation: bounce 0.7s infinite alternate ease-in-out;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+.btn:hover {
+    background-color: #c5151b;
+}
+
+.btn p{
+    font-family: Georgia, serif;
+    font-size: 20px;
+    color: white;
+}
+
+.btn span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.btn img {
+    height: 23px;
+    width: 23px;
+    padding-top: 10px;
+}
+
+h2 {
+    color: #242124;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 40px;
+}
+
+.placeOrder {
+    text-align: center;
+    font-weight: bold;
+}
+
+.btnPlaceOrder {
+    border-radius: 6px;
+    background-color: #8f1115;
+    color: white;
+    border: none;
+    font-size: 21px;
+    cursor: pointer;
+    font-family: Georgia, serif;
+    margin-top: 20px;
+}
+
+.btnPlaceOrder:hover {
+    background-color: #c5151b;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: rgba(245, 245, 245, 0.822);
+    box-shadow: 5px 11px 10px 10px #15151588;
+    border-radius: 5px;
+    margin: 5% auto;
+    padding: 20px;
+    width: 40%;
+}
+
+@media screen and (max-width: 600px) {
+    .modal-content {
+        width: 90%;
+        margin: 5% auto;
+        padding: 20px;
+    }
+
+    .discountType, .placeOrder {
+        font-size: 0.9em;
+    }
+}
+
+.modal-content span {
+    font-family: 'Poppins', sans-serif;
+    color: #8f1115;
+}
+
+.close {
+    color: #8f1115;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -15px;
+}
+
+.close:hover,
+.close:focus {
+    color: #c5151b;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.discountType label {
+    font-family: Georgia, serif;
+    color: #8f1115;
+    font-size: 17px;
+}
+
+.discountType b {
+    font-family: Georgia, serif;
+    color: #8f1115;
+    font-size: 17px;
+}
+
+.discountType span {
+    font-family: 'Poppins', sans-serif;
+    color: #8f1115;
+    font-size: 17px;
+}
+
+.footer {
+    margin-bottom: 40px;
+}
+
+.footer .credit{
+    font-size: 18px;
+    color:#ffffff;
+    font-weight: lighter;
+    text-align: center;
+}
+
+input[type=radio]#Red {
+    accent-color: #8f1115;
+}
+
+input[type=checkbox]#Red {
+    accent-color: #8f1115;
+}

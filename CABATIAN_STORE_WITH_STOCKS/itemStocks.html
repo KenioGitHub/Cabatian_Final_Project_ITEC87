@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sari-sari Store</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="store.css">
+</head>
+<body>
+
+    <header class="header">
+    
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <a class="navbar-brand" href="store.html"><img src="images/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="store.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pants">Pants</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#shirt">Shirts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#perfume">Perfumes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sando">Sando</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#toys">Toys</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#pants">Stocks</a></li>
+                </ul>
+            </div>
+        </nav>
+    
+    </header>
+
+    <div class="items">
+        <section class="pants" id="pants">
+            <h1 class="title">Pants</h1>
+    
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="images/pants/baggypants.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item1" id="jeans1">
+                            <p id="pants1CB" style="font-size: 30px;">Baggy Pants</p>
+                            <p>Stock:
+                            <button class="quantity-btn" onclick="updateStock('jeans1', 1)">+</button>
+                            <span id="stock-jeans1">12</span>
+                            <button class="quantity-btn" onclick="updateStock('jeans1', -1)">-</button>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/pants/trousers.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item1" id="jeans2">
+                            <p id="pants2CB" style="font-size: 30px;">Trousers</p>
+                            <p>Stock: 
+                            <button class="quantity-btn" onclick="updateStock('jeans2', 1)">+</button>
+                            <span id="stock-jeans2">15</span>
+                            <button class="quantity-btn" onclick="updateStock('jeans2', -1)">-</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/pants/flare.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item1" id="jeans3">
+                            <p id="pants3CB" style="font-size: 30px;">Flare Pants</p>
+                            <p>Stock:
+                            <button class="quantity-btn" onclick="updateStock('jeans3', 1)">+</button>
+                            <span id="stock-jeans3">6</span>
+                            <button class="quantity-btn" onclick="updateStock('jeans3', -1)">-</button>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/pants/trackpants.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item1" id="jeans4">
+                            <p id="pants4CB" style="font-size: 30px;">Track Pants</p>
+                            <p>Stock: 
+                            <button class="quantity-btn" onclick="updateStock('jeans4', 1)">+</button>
+                            <span id="stock-jeans4">10</span>
+                            <button class="quantity-btn" onclick="updateStock('jeans4', -1)">-</button>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="shirt" id="shirt">
+            <h1 class="title">T-Shirt</h1>
+    
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="images/shirt/poloshirt.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item1" id="shirt1">
+                            <p id="shirt1CB" style="font-size: 30px;">Polo Shirt</p>
+                            
+                            <p>Stock:
+                            <button class="quantity-btn" onclick="updateStock('shirt1', 1)">+</button>
+                            <span id="stock-shirt1">10</span>
+                            <button class="quantity-btn" onclick="updateStock('shirt1', -1)">-</button>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/shirt/compression.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item1" id="shirt2">
+                            <p id="shirt2CB" style="font-size: 30px;">Compression Shirt</p>
+                            <p>Stock:
+                            <button class="quantity-btn" onclick="updateStock('shirt2', 1)">+</button>
+                            <span id="stock-shirt2">4</span>
+                            <button class="quantity-btn" onclick="updateStock('shirt2', -1)">-</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/shirt/thesmiths.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item1" id="shirt3">
+                            <p id="shirt3CB" style="font-size: 30px;">The Smiths Shirt</p>
+                            <p>Stock: 
+                            <button class="quantity-btn" onclick="updateStock('shirt3', 1)">+</button>
+                            <span id="stock-shirt3">21</span>
+                            <button class="quantity-btn" onclick="updateStock('shirt3', -1)">-</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/shirt/vintage.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item1" id="shirt4">
+                            <p id="shirt4CB" style="font-size: 30px;">Vintage Polo</p>
+                            <p>Stock: 
+                            <button class="quantity-btn" onclick="updateStock('shirt4', 1)">+</button>
+                            <span id="stock-shirt4">8</span>
+                            <button class="quantity-btn" onclick="updateStock('shirt4', -1)">-</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="perfume" id="perfume">
+            <h1 class="title">Perfume</h1>
+    
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="images/perfume/armani.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item1" id="perfume1">
+                            <p id="perfume1" style="font-size: 30px;">Armani</p>
+                            <p>Stock: 
+                            <button class="quantity-btn" onclick="updateStock('perfume1', 1)">+</button>
+                            <span id="stock-perfume1">3</span>
+                            <button class="quantity-btn" onclick="updateStock('perfume1', -1)">-</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/perfume/chanel.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item1" id="perfume2">
+                            <p id="perfume2CB" style="font-size: 30px;">Chanel</p>
+                            <p>Stock:
+                            <button class="quantity-btn" onclick="updateStock('perfume2', 1)">+</button>
+                            <span id="stock-perfume2">11</span>
+                            <button class="quantity-btn" onclick="updateStock('perfume2', -1)">-</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/perfume/sauvage.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item1" id="perfume3">
+                            <p id="perfume3CB" style="font-size: 30px;">Sauvage</p>
+                            <p>Stock: 
+                            <button class="quantity-btn" onclick="updateStock('perfume3', 1)">+</button>
+                            <span id="stock-perfume3">9</span>
+                            <button class="quantity-btn" onclick="updateStock('perfume3', -1)">-</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/perfume/versace.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item1" id="perfume4">
+                            <p id="perfume4CB" style="font-size: 30px;">Versace</p>
+                            <p>Stock: 
+                            <button class="quantity-btn" onclick="updateStock('perfume4', 1)">+</button>
+                            <span id="stock-perfume4">5</span>
+                            <button class="quantity-btn" onclick="updateStock('perfume4', -1)">-</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sando" id="sando">
+            <h1 class="title">Sando</h1>
+    
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="images/sando/flameHeart.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item1" id="sando1">
+                            <p id="sando1CB" style="font-size: 30px;">Flame Heart</p>
+                            <p>Stock: 
+                            <button class="quantity-btn" onclick="updateStock('sando1', 1)">+</button>
+                            <span id="stock-sando1">4</span>
+                            <button class="quantity-btn" onclick="updateStock('sando1', -1)">-</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="images/sando/grayTankTop.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item1" id="sando2">
+                            <p id="sando2CB" style="font-size: 30px;">Gray Tank Top</p>
+                            <p>Stock: 
+                            <button class="quantity-btn" onclick="updateStock('sando2', 1)">+</button>
+                            <span id="stock-sando2">8</span>
+                            <button class="quantity-btn" onclick="updateStock('sando2', -1)">-</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/sando/sportSando.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item1" id="sando3">
+                            <p id="sando3CB" style="font-size: 30px;">Sports Sando</p>
+                            <p>Stock: 
+                            <button class="quantity-btn" onclick="updateStock('sando3', 1)">+</button>
+                            <span id="stock-sando3">10</span>
+                            <button class="quantity-btn" onclick="updateStock('sando3', -1)">-</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/sando/whiteTankTop.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item1" id="sando4">
+                            <p id="sando4CB" style="font-size: 30px;">White Tank Top</p>
+                            <p>Stock: 
+                            <button class="quantity-btn" onclick="updateStock('sando4', 1)">+</button>
+                            <span id="stock-sando4">10</span>
+                            <button class="quantity-btn" onclick="updateStock('sando4', -1)">-</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="toys" id="toys">
+            <h1 class="title">Toys</h1>
+    
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="images/toys/joker.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item1" id="toys1">
+                            <p id="toys1CB" style="font-size: 30px;">Joker</p>
+                            <p>Stock: 
+                            <button class="quantity-btn" onclick="updateStock('toys1', 1)">+</button>
+                            <span id="stock-toys1">17</span>
+                            <button class="quantity-btn" onclick="updateStock('toys1', -1)">-</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/toys/lightsaber.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item1" id="toys2">
+                            <p id="toys2CB" style="font-size: 30px;">Light Saber</p>
+                            <p>Stock: 
+                            <button class="quantity-btn" onclick="updateStock('toys2', 1)">+</button>
+                            <span id="stock-toys2">4</span>
+                            <button class="quantity-btn" onclick="updateStock('toys2', -1)">-</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/toys/pokeball.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item1" id="toys3">
+                            <p id="toys3CB" style="font-size: 30px;">Pokéball</p>
+                            <p>Stock: 
+                            <button class="quantity-btn" onclick="updateStock('toys3', 1)">+</button>
+                            <span id="stock-toys3">12</span>
+                            <button class="quantity-btn" onclick="updateStock('toys3', -1)">-</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="box">
+                    <div class="image">
+                        <img src="images/toys/rubiks.jpg" alt="">
+                    </div>
+                    <div id="stock-list">
+                        <div class="stock-item1" id="toys4">
+                            <p id="toys4CB" style="font-size: 30px;">Rubiks</p>      
+                            <p>Stock: 
+                            <button class="quantity-btn" onclick="updateStock('toys4', 1)">+</button>
+                            <span id="stock-toys4">10</span>
+                            <button class="quantity-btn" onclick="updateStock('toys4', -1)">-</button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    </div>
+
+    <section class="footer">
+
+        <div class="credit">
+            © 2024 Spree Clothing | All Rights Reserved.
+        </div>
+
+    </section>
+
+    <script>
+        function updateStock(item, change) {
+            let stockElement = document.getElementById('stock-' + item);
+            let stock = parseInt(stockElement.innerText);
+
+            if (change === -1 && stock > 0) {
+                stock--;
+            } else if (change === 1) {
+                stock++;
+            }
+
+            stockElement.innerText = stock;
+
+            // Update stock in localStorage
+            localStorage.setItem('stock-' + item, stock);
+
+            // Update stock in store.html if it's open
+            if (window.opener) {
+                window.opener.updateStock(item, change);
+            }
+        }
+        document.addEventListener('DOMContentLoaded', (event) => {
+            let stockItems = [
+                'jeans1', 'jeans2', 'jeans3', 'jeans4', 
+                'shirt1', 'shirt2', 'shirt3', 'shirt4', 
+                'perfume1', 'perfume2', 'perfume3', 'perfume4',
+                'sando1', 'sando2', 'sando3', 'sando4',
+                'toys1', 'toys2', 'toys3', 'toys4'
+            ];
+            stockItems.forEach(item => {
+                let stock = localStorage.getItem('stock-' + item);
+                if (stock !== null) {
+                    document.getElementById('stock-' + item).innerText = stock;
+                }
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
